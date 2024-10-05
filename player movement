@@ -1,0 +1,55 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class movement : MonoBehaviour
+{
+    public float speed = 5f;
+    public float rotationspeed = 360f;
+
+    Rigidbody rb;
+
+    private float horizontal, vertical, mousex, mousey;
+    private Vector3 rotationvector;
+
+    private void Awake()
+    {
+        rb = GetComponent<Rigidbody>();
+    }
+
+    private void Start()
+    {
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+    }
+
+    private void FixedUpdate()
+    {
+        horizontal = Input.GetAxis("Horizontal");
+        vertical = Input.GetAxis("Vertical");
+        mousex = Input.GetAxis("Mouse X");
+        mousey = Input.GetAxis("Mouse Y");
+
+        move();
+        rotate();
+        
+    }
+
+    private void move()
+    {
+        Vector3 target = (transform.forward * vertical + transform.right * horizontal)
+            * speed * Time.fixedDeltaTime;
+        rb.MovePosition(transform.position + target);
+    }
+
+    private void rotate()
+    {
+        rotationvector += new Vector3(-mousey, mousex, 0)
+            * rotationspeed * Time.fixedDeltaTime;
+        rotationvector.x = Mathf.Clamp(rotationvector.x, -45, 45);
+
+        transform.rotation = Quaternion.Euler(rotationvector);
+
+    }
+
+}
