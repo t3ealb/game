@@ -1,0 +1,432 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace community_mapping
+{
+    public partial class GHG_production : Form
+    {
+        public GHG_production()
+        {
+            InitializeComponent();
+        }
+
+        private void GHG_production_Load(object sender, EventArgs e)
+        {
+            label2.Visible = false;
+            label3.Visible = false;
+            label4.Visible = false;
+            label5.Visible = false;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+            switch (textBox1.Text)
+            {
+
+                case ("Egypt"):
+                    textBox2.Text = "357,544,540 ton";
+                    break;
+                case ("USA"):
+                    textBox2.Text = "6,001,570,000 ton";
+                    break;
+                case ("UK"):
+                    textBox2.Text = "407,142,620 ton";
+                    break;
+                case ("German"):
+                    textBox2.Text = "739,387,000 ton";
+                    break;
+                case ("France"):
+                    textBox2.Text = "375,925,950 ton";
+                    break;
+                case ("China"):
+                    textBox2.Text = "13,943,689,000 ton";
+                    break;
+                case ("Afghanistan"):
+                    textBox2.Text = "36,614,290 ton";
+                    break;
+                case ("Africa"):
+                    textBox2.Text = "4,747,870,000 ton";
+                    break;
+                case ("Albania"):
+                    textBox2.Text = "8,034,590 ton";
+                    break;
+                case ("Algeria"):
+                    textBox2.Text = "281,968,320 ton";
+                    break;
+                case ("Asia"):
+                    textBox2.Text = "30,062,864,000 ton";
+                    break;
+                case ("Australia"):
+                    textBox2.Text = "573,644,100 ton";
+                    break;
+                case ("Bahrain"):
+                    textBox2.Text = "67,601,640 ton";
+                    break;
+                case ("Belgium"):
+                    textBox2.Text = "112,473,180 ton";
+                    break;
+                case ("Brazil"):
+                    textBox2.Text = "2,248,130,000 ton";
+                    break;
+                case ("Canada"):
+                    textBox2.Text = "781,941,060 ton";
+                    break;
+                case ("Europe"):
+                    textBox2.Text = "6,595,543,600 ton";
+                    break;
+                case ("Argentena"):
+                    textBox2.Text = "388,107,140 ton";
+                    break;
+                case ("Armenia"):
+                    textBox2.Text = "9,655,818 ton";
+                    break;
+                case ("North America"):
+                    textBox2.Text = "8,080,421,400 ton";
+                    break;
+                case ("South America"):
+                    textBox2.Text = "3,670,435,600 ton";
+                    break;
+                case ("India"):
+                    textBox2.Text = "4,046,960,600 ton";
+                    break;
+                case ("Russia"):
+                    textBox2.Text = "2,289,565,400 ton";
+                    break;
+                case ("Indonesia"):
+                    textBox2.Text = "2,127,215,600 ton";
+                    break;
+                case ("Japan"):
+                    textBox2.Text = "1,094,214,000 ton";
+                    break;
+                case ("Mexico"):
+                    textBox2.Text = "952,923,970 ton";
+                    break;
+                case ("Iran"):
+                    textBox2.Text = "935,348,200 ton";
+                    break;
+                case ("Saudi Arabic"):
+                    textBox2.Text = "811,105,500 ton";
+                    break;
+                case ("Oceania"):
+                    textBox2.Text = "694,027,000 ton";
+                    break;
+                case ("South Korea"):
+                    textBox2.Text = " ton";
+                    break;
+                case ("Vietnam"):
+                    textBox2.Text = "619,503,700 ton";
+                    break;
+                case ("Congo"):
+                    textBox2.Text = "601,200,800 ton";
+                    break;
+                case ("Turkey"):
+                    textBox2.Text = "579,495,360 ton";
+                    break;
+                case ("Pakistan"):
+                    textBox2.Text = "520,090,050 ton";
+                    break;
+                case ("South Afrika"):
+                    textBox2.Text = "518,069,100 ton";
+                    break;
+                case ("Malaysia"):
+                    textBox2.Text = "484,118,800 ton";
+                    break;
+                case ("Nigeria"):
+                    textBox2.Text = "425,441,950 ton";
+                    break;
+                case ("Thailand"):
+                    textBox2.Text = "422,101,900 ton";
+                    break;
+                case ("Italy"):
+                    textBox2.Text = "382,970,940 ton";
+                    break;
+                case ("Poland"):
+                    textBox2.Text = "366,106,980 ton";
+                    break;
+                case ("Kasakhstan"):
+                    textBox2.Text = "357,956,380 ton";
+                    break;
+                case ("Iraq"):
+                    textBox2.Text = "354,352,060 ton";
+                    break;
+                case ("Ethiopia"):
+                    textBox2.Text = "303,876,400 ton";
+                    break;
+                case ("Taiwan"):
+                    textBox2.Text = "300,120,960 ton";
+                    break;
+                case ("UAE"):
+                    textBox2.Text = "298,958,000 ton";
+                    break;
+                case ("Spain"):
+                    textBox2.Text = "298,429,500 ton";
+                    break;
+                case ("Aleria"):
+                    textBox2.Text = "281,968,320 ton";
+                    break;
+                case ("Philippines"):
+                    textBox2.Text = "278,720,830 ton";
+                    break;
+                case ("Colombia"):
+                    textBox2.Text = "271,795,780 ton";
+                    break;
+                case ("Bangladesh"):
+                    textBox2.Text = "252,718,190 ton";
+                    break;
+                case ("Myanmar"):
+                    textBox2.Text = "229,034,660 ton";
+                    break;
+                case ("Tanzania"):
+                    textBox2.Text = "221,977,860 ton";
+                    break;
+                case ("Ukraine"):
+                    textBox2.Text = "216,495,890 ton";
+                    break;
+                case ("Uzbekistan"):
+                    textBox2.Text = "205,844,820 ton";
+                    break;
+                case ("Qatar"):
+                    textBox2.Text = "190,064,940 ton";
+                    break;
+                case ("Angola"):
+                    textBox2.Text = "182,069,890 ton";
+                    break;
+                case ("Netherlands"):
+                    textBox2.Text = "162,065,060 ton";
+                    break;
+                case ("Venezuela"):
+                    textBox2.Text = "160,328,900 ton";
+                    break;
+                case ("Kuwait"):
+                    textBox2.Text = "151,761,920 ton";
+                    break;
+                case ("Sudan"):
+                    textBox2.Text = "146,914,600 ton";
+                    break;
+                case ("Peru"):
+                    textBox2.Text = "137,743,860 ton";
+                    break;
+                case ("Turkmenistan"):
+                    textBox2.Text = "129,964,350 ton";
+                    break;
+                case ("Chad"):
+                    textBox2.Text = "123,956,420 ton";
+                    break;
+                case ("Chile"):
+                    textBox2.Text = "121,505,944 ton";
+                    break;
+                case ("Oman"):
+                    textBox2.Text = "116,818,040 ton";
+                    break;
+                case ("Kenya"):
+                    textBox2.Text = "112,341,144 ton";
+                    break;
+                case ("Belarus"):
+                    textBox2.Text = "108,701,150 ton";
+                    break;
+                case ("Morocco"):
+                    textBox2.Text = "107,829,180 ton";
+                    break;
+                case ("Bolivia"):
+                    textBox2.Text = "107,424,920 ton";
+                    break;
+                case ("Czechia"):
+                    textBox2.Text = "106,136,390 ton";
+                    break;
+                case ("Libya"):
+                    textBox2.Text = "99,328,104 ton";
+                    break;
+                case ("Romania"):
+                    textBox2.Text = "96,217,110 ton";
+                    break;
+                case ("Paraguay"):
+                    textBox2.Text = "91,548,450 ton";
+                    break;
+                case ("Zambia"):
+                    textBox2.Text = "89,384,760 ton";
+                    break;
+                case ("Cote d'Ivoire"):
+                    textBox2.Text = "84,415,570 ton";
+                    break;
+                case ("Mozambique"):
+                    textBox2.Text = "84,125,944 ton";
+                    break;
+                case ("Mongolia"):
+                    textBox2.Text = "81,538,510 ton";
+                    break;
+                case ("Ecuador"):
+                    textBox2.Text = "80,009,300 ton";
+                    break;
+                case ("Palestine"):
+                    textBox2.Text = "75,736,220 ton";
+                    break;
+                case ("Ireland"):
+                    textBox2.Text = "73,996,790 ton";
+                    break;
+                case ("Norway"):
+                    textBox2.Text = "72,555,410 ton";
+                    break;
+                case ("Finland"):
+                    textBox2.Text = "72,358,910 ton";
+                    break;
+                case ("Cambodia"):
+                    textBox2.Text = "71,423,050 ton";
+                    break;
+                case ("Sweden"):
+                    textBox2.Text = "70,715,310 ton";
+                    break;
+                case ("Azerbaijan"):
+                    textBox2.Text = "70,603,160 ton";
+                    break;
+                case ("Austria"):
+                    textBox2.Text = "68,350,050 ton";
+                    break;
+                case ("South Sudan"):
+                    textBox2.Text = "67,696,540 ton";
+                    break;
+                case ("Laos"):
+                    textBox2.Text = "67,288,190 ton";
+                    break;
+                case ("Uganda"):
+                    textBox2.Text = "67,116,590 ton";
+                    break;
+                case ("Cameroon"):
+                    textBox2.Text = "65,646,628 ton";
+                    break;
+                case ("New Zealand"):
+                    textBox2.Text = "65,421,948 ton";
+                    break;
+                case ("Greece"):
+                    textBox2.Text = "62,116,650 ton";
+                    break;
+                case ("Niger"):
+                    textBox2.Text = "60,458,370 ton";
+                    break;
+                case ("Singapore"):
+                    textBox2.Text = "60,272,492 ton";
+                    break;
+                case ("Nepal"):
+                    textBox2.Text = "57,197,910 ton";
+                    break;
+                case ("Bulgaria"):
+                    textBox2.Text = "55,131,516 ton";
+                    break;
+                case ("Guatemala"):
+                    textBox2.Text = "54,318,120 ton";
+                    break;
+                case ("Madagascar"):
+                    textBox2.Text = "53,829,570 ton";
+                    break;
+                case ("Hungary"):
+                    textBox2.Text = "53,782,910 ton";
+                    break;
+                case ("Mali"):
+                    textBox2.Text = "53,086,960 ton";
+                    break;
+                case ("Ghana"):
+                    textBox2.Text = "51,928,680 ton";
+                    break;
+                case ("Portugal"):
+                    textBox2.Text = "51,372,372 ton";
+                    break;
+                case ("Serbia"):
+                    textBox2.Text = "49,427,076 ton";
+                    break;
+                case ("Somalia"):
+                    textBox2.Text = "49,001,976 ton";
+                    break;
+                case ("Tunisia"):
+                    textBox2.Text = "48,641,690 ton";
+                    break;
+                case ("Burkina Faso"):
+                    textBox2.Text = "47,681,788 ton";
+                    break;
+                case ("Guinea"):
+                    textBox2.Text = "45,867,200 ton";
+                    break;
+                case ("Denmark"):
+                    textBox2.Text = "44,506,308 ton";
+                    break;
+                case ("Uruguay"):
+                    textBox2.Text = "42,856,570 ton";
+                    break;
+                case ("Switzerland"):
+                    textBox2.Text = "42,441,440 ton";
+                    break;
+                case ("Syria"):
+                    textBox2.Text = "41793716 ton";
+                    break;
+                case ("Papua New Guinea"):
+                    textBox2.Text = "41,630,540 ton";
+                    break;
+                case ("Slovakia"):
+                    textBox2.Text = "40,136,610 ton";
+                    break;
+                case ("Nicaragua"):
+                    textBox2.Text = "39,808,856 ton";
+                    break;
+                case ("Dominican Republic"):
+                    textBox2.Text = "38,533,190 ton";
+                    break;
+                case ("Hong Kong"):
+                    textBox2.Text = "37,087,708 ton";
+                    break;
+                case ("Honduras"):
+                    textBox2.Text = "36,156,800 ton";
+                    break;
+                case (""):
+                    textBox2.Text = "";
+                    break;
+            }
+
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            label2.Visible = true;
+            label3.Visible = false;
+            label4.Visible = false;
+            label5.Visible = false;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            label2.Visible = false;
+            label3.Visible = true;
+            label4.Visible = false;
+            label5.Visible = false;
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            label2.Visible = false;
+            label3.Visible = false;
+            label4.Visible = true;
+            label5.Visible = false;
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            label2.Visible = false;
+            label3.Visible = false;
+            label4.Visible = false;
+            label5.Visible = true;
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+
+    }
+}
