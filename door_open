@@ -1,0 +1,20 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+    public class dooropen : MonoBehaviour
+    {
+
+        [SerializeField] private Animator animator;
+        [SerializeField] private bool open;
+
+        private void OnTriggerEnter(Collider other)
+        {
+            if (other.CompareTag("Player"))
+            {
+                animator.Play("door open", 0);
+                gameObject.SetActive(false);
+            }
+        }
+
+    }
